@@ -1,0 +1,50 @@
+.dogs__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  gap: 1.25rem;
+}
+
+.selected__button {
+  padding: 1rem;
+  outline: 4px solid var(--brown);
+  border-radius: 0.25rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: var(--bege);
+  transition: all 500ms;
+  background-color: var(--light__brown);
+  text-align: left;
+  transform: scale(0.9);
+}
+
+.dogs__button {
+  padding: 1rem;
+  outline: 4px solid var(--dark__brown);
+  border-radius: 0.25rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: 200ms;
+  color: var(--brown);
+  text-align: left;
+}
+
+.dogs__button:hover {
+  color: var(--bege);
+  outline-color: var(--brown);
+  background-color: var(--light__brown);
+}
+
+@media (max-width: 800px) {
+  .dogs__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .dogs__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
